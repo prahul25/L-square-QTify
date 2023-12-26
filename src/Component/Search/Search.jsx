@@ -1,5 +1,6 @@
 import React from "react";
-import { ReactComponent as SearchIcon} from "../Assets/Search-icon.svg";
+
+import SearchIcon from "../Assets/Search icon.png"
 import styles from "./Search.module.css";
 
 const Search = ({placeholder}) => {
@@ -9,7 +10,7 @@ const Search = ({placeholder}) => {
     return <form className={styles.wrapper} onSubmit={onSubmit}>
         <input className={styles.search} placeholder={placeholder} required/>
         <button type="submit" className={styles.searchButton}>
-            <SearchIcon/>
+            <img src={SearchIcon} alt="" />
         </button>
     </form>
 }
