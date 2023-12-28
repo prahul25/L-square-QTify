@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ data, type }) => {
   
-  console.log({data}  , "data")
+  // console.log({data}  , "data")
   const getCard = (type) => {
     switch (type) {
       case "album": {
