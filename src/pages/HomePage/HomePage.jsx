@@ -4,6 +4,7 @@ import { useOutletContext } from "react-router-dom";
 import Hero from "../../Component/Hero/Hero";
 import Section from "../../Component/Section/Section";
 import { fetchFilters } from "../../api/api";
+import Faq from "../../Component/FAQ/Faq";
 
 const HomePage = () =>{
     const {data} = useOutletContext()
@@ -16,6 +17,7 @@ const HomePage = () =>{
             <Section title="Top Albums" data={topAlbums} type="album"/>
             <Section title="New Albums" data={newAlbums} type="album"/>
             <Section title="Songs" data={songs} filterSource={fetchFilters} type="song"/>
+            <Faq/>
         </div>
         </>
     )
